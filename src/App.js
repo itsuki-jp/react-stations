@@ -13,7 +13,7 @@ export const App = () => {
   function changeImage() {
     setDogUrl("https://images.dog.ceo/breeds/ovcharka-caucasian/IMG_20200205_163615.jpg");
   }
-  
+
   function getImage() {
     fetch("https://dog.ceo/api/breeds/image/random")
       .then(res => res.json())
@@ -21,6 +21,7 @@ export const App = () => {
         setDogUrl(result.message);
       });
   }
+
   return (
     <div>
       <header>TechTrain</header>
